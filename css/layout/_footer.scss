@@ -4,4 +4,31 @@
 .section-footer {
   flex: 0 0 auto;
   background-color: $color-shark;
+
+  .section-inner {
+    @include flex(center, space-between);
+  }
+}
+
+.footer {
+  &__copy {
+    color: $color-white-50t;
+    font-size: $fs-xs;
+    line-height: 20px;
+  }
+
+  &__nav {
+    .nav {
+      &__link {
+        color: $color-white-50t;
+        font-size: $fs-xs;
+        line-height: 20px;
+
+        &:hover,
+        &:focus {
+          color: $color-white;
+        }
+      }
+    }
+  }
 }
