@@ -16,8 +16,8 @@ $color-white-50t: rgb(255, 255, 255, 0.5) !default; // Текст и элеме�
 $color-shark: rgba(32, 34, 42) !default; // Основной фон, текст и элементы на светлом фоне
 $color-shark-50t: rgba(32, 34, 42, 0.5) !default; // Второстепенный текст на светлом фоне
 $color-alto: rgba(224, 224, 224); // Разделители на светлом фоне
-$color-ebony-clay: rgba(39, 46, 59); // Подложка
 $color-bright-gray: rgba(61, 69, 84); // Разделители на тёмном фоне
+$color-ebony-clay: rgba(39, 46, 59); // Подложка
 $color-fiord: rgba(66, 81, 112); // Неактивные элементы на темном фоне
 $color-tango: rgba(244, 117, 35); // Горячие цены
 $color-brand: rgb(244, 192, 56) !default; // Основной акцентный цвет
@@ -50,10 +50,9 @@ $fs-3xl: 40px;
 $fs-4xl: 48px;
 $fs-5xl: 56px;
 
-
 /// Container's maximum width
-$max-width: 1320px !default;
-$max-width--narrow: 1120px !default;
+$max-width: 1280px   !default;
+$max-width--narrow: 1024px !default;
 
 
 /// Breakpoints map

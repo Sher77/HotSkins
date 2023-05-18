@@ -1,3 +1,89 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.btn {
+  @include btnReset;
+  @include flex(center, center);
+
+  padding: 13px 23px;
+  font-size: $fs-s;
+  font-weight: 500;
+  line-height: 20px;
+  border: 2px solid transparent;
+  border-radius: 48px;
+  transition: all 0.3s ease-in-out;
+
+  &__icon {
+    margin-right: 12px;
+
+    path {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &--primary {
+    color: $color-ebony-clay;
+    background-color: $color-brand;
+
+    .btn__icon {
+      path {
+        fill: $color-ebony-clay;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: darken($color-brand, 10%);
+    }
+
+    &.disabled {
+      color: $color-white-50t;
+      background-color: $color-fiord;
+      pointer-events: none;
+      
+      .btn__icon {
+        path {
+          fill: $color-white-50t;
+        }
+      }
+    }
+  }
+
+  &--secondary {
+    color: $color-brand;
+    background-color: transparent;
+    border-color: $color-brand;
+
+    .btn__icon {
+      path {
+        fill: $color-brand;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-shark;
+      background-color: $color-brand;
+      
+      .btn__icon {
+        path {
+          fill: $color-shark;
+        }
+      }
+    }
+
+    &.disabled {
+      color: $color-fiord;
+      background-color: transparent;
+      border-color: $color-fiord;
+      pointer-events: none;
+      
+      .btn__icon {
+        path {
+          fill: $color-fiord;
+        }
+      }
+    }
+  }
+}

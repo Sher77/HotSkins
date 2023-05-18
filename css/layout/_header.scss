@@ -1,3 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.section-header {
+  background-color: $color-shark;
+  border-bottom: 2px solid $color-ebony-clay;
+
+  .section-inner {
+    @include flex(center);
+  }
+}
+
+.header {
+  &__logo {
+    margin-right: 140px;
+  }
+
+  &__right {
+    @include flex(center);
+
+    margin-left: auto;
+  }
+
+  &__lang-picker {
+    margin-right: 24px;
+  }
+}
