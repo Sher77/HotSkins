@@ -10,19 +10,3 @@
     @include flex(center);
   }
 }
-
-.header {
-  &__logo {
-    margin-right: 140px;
-  }
-
-  &__right {
-    @include flex(center);
-
-    margin-left: auto;
-  }
-
-  &__lang-picker {
-    margin-right: 24px;
-  }
-}

@@ -729,40 +729,26 @@ body {
   justify-content: initial;
 }
 
-.header__logo {
-  margin-right: 140px;
-}
-.header__right {
-  display: flex;
-  align-items: center;
-  justify-content: initial;
-  margin-left: auto;
-}
-.header__lang-picker {
-  margin-right: 24px;
-}
-
 .section-main {
   flex: 1 0 auto;
   background-color: rgb(32, 34, 42);
 }
 
-.section-hero {
-  height: 100vh;
-  background-color: rgb(32, 34, 42);
-  background-image: url("../../assets/img/hero/hero-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center right;
+.form {
+  display: flex;
+  flex-direction: column;
 }
-
-.hero__title {
-  width: 704px;
-  margin-bottom: 40px;
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 60px;
-  color: rgb(255, 255, 255);
+.form__input {
+  padding: 16px 24px;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border: 2px solid rgb(61, 69, 84);
+  border-radius: 24px;
+}
+.form__input:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .section-footer {
@@ -787,4 +773,73 @@ body {
 }
 .footer__nav .nav__link:hover, .footer__nav .nav__link:focus {
   color: rgb(255, 255, 255);
+}
+
+.header__logo {
+  margin-right: 140px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  margin-left: auto;
+}
+.header__lang-picker {
+  margin-right: 24px;
+}
+
+.section-hero {
+  height: 100vh;
+  background-color: rgb(32, 34, 42);
+  background-image: url("../../assets/img/hero/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center right;
+}
+
+.hero__title {
+  width: 704px;
+  margin-bottom: 40px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+}
+.hero__btn {
+  display: inline-flex;
+}
+
+.footer__copy {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer__nav .nav__link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer__nav .nav__link:hover, .footer__nav .nav__link:focus {
+  color: rgb(255, 255, 255);
+}
+
+.section-connection .section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.connection__title {
+  margin-bottom: 38px;
+  font-size: 32px;
+  font-weight: 500;
+}
+.connection__img {
+  align-self: flex-end;
+}
+.connection__content {
+  width: 500px;
+}
+.connection__btn {
+  align-self: flex-start;
 }/*# sourceMappingURL=main.css.map */

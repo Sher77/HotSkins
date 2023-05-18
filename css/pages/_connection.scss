@@ -1,0 +1,25 @@
+.section-connection {
+  .section-inner {
+    @include flex(center, space-evenly);
+  }
+}
+
+.connection {
+  &__title {
+    margin-bottom: 38px;
+    font-size: $fs-2xl;
+    font-weight: 500;
+  }
+
+  &__img {
+    align-self: flex-end  ;
+  }
+
+  &__content {
+    width: 500px;
+  }
+
+  &__btn {
+    align-self: flex-start;
+  }
+}

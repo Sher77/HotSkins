@@ -16,7 +16,7 @@
   
   <header class="section-header section-outer">
     <div class="section-inner vertical-indent--s">
-      <a href="##" class="header__logo logo">
+      <a href="index.html" class="header__logo logo">
         <svg width="173" height="41" viewBox="0 0 173 41" fill="none">
           <path d="M31.5698 18.3496C30.7845 22.9695 35.3307 32.6774 30.0346 34.5203C24.7385 36.3631 22.3904 39.5179 20.8479 32.9448C20.1276 29.8752 19.8058 24.1349 20.8479 21.4891C24.0116 21.1984 25.7383 18.7145 27.6445 17.7064C32.0349 15.3845 32.3256 17.7064 31.5698 18.3496Z" fill="#EC9630"/>
           <path d="M16.0466 15.1519C15.4652 9.91935 7.38377 19.2798 11.1047 25.7333L11.4535 33.931L31.8024 35.5007L31.8589 35.2715C34.4869 24.6132 37.1198 13.9345 30.814 18.931C22.8752 25.2214 16.6116 20.2369 16.0466 15.1519Z" fill="#EFBC3A"/>
@@ -95,10 +95,21 @@
   </header>
 
   <main class="section-main">
-    <section class="section-hero section-outer">
+    <section class="section-connection section-outer">
       <div class="section-inner vertical-indent--l">
-        <h1 class="hero__title">Принимайте платежи от пользователей с&nbsp;помощью скинов CS:GO и DOTA&nbsp;2</h1>
-        <a class="hero__btn btn btn--primary" href="connection.html">Подключить проект</a>
+        <div class="connection__img">
+          <img src="assets/img/connection.png" alt="Логотип HotSkins">
+        </div>
+        <div class="connection__content">
+          <h2 class="connection__title">Заявка на подключение</h2>
+          <form action="" class="connection__form form">
+            <input class="form__input" placeholder="Ваше имя" type="text" name="name">
+            <input class="form__input" placeholder="Ваше email" type="email" name="email">
+            <input class="form__input" placeholder="Адрес сайта" type="text" name="address">
+            <textarea class="form__input" placeholder="Ваши контакты(Телефон, Telegram, WhatsApp..)" cols="30" rows="6" name="contacts"></textarea>
+            <button type="submit" class="connection__btn form__btn btn btn--primary">Отправить заявку</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

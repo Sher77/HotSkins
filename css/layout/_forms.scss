@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    padding: 16px 24px;
+    font-size: $fs-xs;
+    line-height: 14px;
+    color: $color-white-50t;
+    background-color: transparent;
+    border: 2px solid $color-bright-gray;
+    border-radius: 24px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
