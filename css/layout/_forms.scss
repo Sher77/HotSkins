@@ -2,17 +2,82 @@
   display: flex;
   flex-direction: column;
 
-  &__input {
-    padding: 16px 24px;
+  &__fieldset {
+    position: relative;
+
+    &.error {
+      .form {
+        &__legend {
+          color: $color-cerise-red;
+        }
+
+        &__input {
+          border-color: $color-cerise-red;
+        }
+      }
+    }
+  }
+
+  &__legend {
+    position: absolute;
+    top: -5px;
+    left: 17px;
+    display: none;
+    padding: 0 4px;
     font-size: $fs-xs;
     line-height: 14px;
     color: $color-white-50t;
+    background-color: $color-shark;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: $fs-xs;
+    line-height: 14px;
+    color: $color-white;
     background-color: transparent;
     border: 2px solid $color-bright-gray;
     border-radius: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &::placeholder {
+      color: $color-white-50t;
+    }
 
     &:not(:last-child) {
       margin-bottom: 24px;
     }
+
+    &:hover,
+    &:focus {
+      border-color: $color-brand;
+
+      & +.form__legend {
+        color: $color-brand;
+      }
+    }
+
+    &--disabled {
+      color: $color-fiord;
+      border-color: $color-fiord;
+      background-color: $color-ebony-clay;
+      pointer-events: none;
+
+      &:hover,
+      &:focus {
+        color: $color-fiord;
+        border-color: $color-fiord;
+        background-color: $color-ebony-clay;
+      }
+
+      & + .form__legend {
+        display: none;
+      }
+    }
   }
 }
+
+

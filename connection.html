@@ -103,10 +103,22 @@
         <div class="connection__content">
           <h2 class="connection__title">Заявка на подключение</h2>
           <form action="" class="connection__form form">
-            <input class="form__input" placeholder="Ваше имя" type="text" name="name">
-            <input class="form__input" placeholder="Ваше email" type="email" name="email">
-            <input class="form__input" placeholder="Адрес сайта" type="text" name="address">
-            <textarea class="form__input" placeholder="Ваши контакты (Телефон, Telegram, WhatsApp..)" cols="30" rows="6" name="contacts"></textarea>
+            <div class="form__fieldset">
+              <input class="form__input" placeholder="Ваше имя" type="text" name="name">
+              <span class="form__legend">Ваше имя</span>
+            </div>
+            <div class="form__fieldset">
+              <input class="form__input form__input--disabled" placeholder="Ваш email" type="email" name="email">
+              <span class="form__legend">Ваш email</span>
+            </div>
+            <div class="form__fieldset">
+              <input class="form__input" placeholder="Адрес сайта" type="text" name="address">
+              <span class="form__legend">Адрес сайта</span>
+            </div>
+            <div class="form__fieldset">
+              <textarea class="form__input" placeholder="Ваши контакты (Телефон, Telegram, WhatsApp..)" cols="30" rows="6" name="contacts"></textarea>
+              <span class="form__legend">Ваши контакты</span>
+            </div>
             <button type="submit" class="connection__btn form__btn btn btn--primary">Отправить заявку</button>
           </form>
         </div>
