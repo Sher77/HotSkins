@@ -346,6 +346,9 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   scroll-behavior: smooth;
   line-height: 1;
 }
@@ -520,29 +523,6 @@ body {
   padding-bottom: 80px;
 }
 
-.section-header {
-  background-color: rgb(32, 34, 42);
-  border-bottom: 2px solid rgb(39, 46, 59);
-}
-.section-header .section-inner {
-  display: flex;
-  align-items: center;
-  justify-content: initial;
-}
-
-.header__logo {
-  margin-right: 140px;
-}
-.header__right {
-  display: flex;
-  align-items: center;
-  justify-content: initial;
-  margin-left: auto;
-}
-.header__lang-picker {
-  margin-right: 24px;
-}
-
 .nav__list {
   display: flex;
   align-items: center;
@@ -552,7 +532,6 @@ body {
   margin-right: 32px;
 }
 .nav__link {
-  position: relative;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -573,7 +552,22 @@ body {
 .nav__link:hover, .nav__link:focus {
   color: rgb(244, 192, 56);
 }
-.nav__link:hover:before, .nav__link:focus:before {
+
+.header__nav .nav__link {
+  position: relative;
+}
+.header__nav .nav__link:before {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(244, 192, 56);
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.header__nav .nav__link:hover:before, .header__nav .nav__link:focus:before {
   opacity: 1;
 }
 
@@ -723,4 +717,55 @@ body {
 .lang-picker.open .lang-picker__btn {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.section-header {
+  background-color: rgb(32, 34, 42);
+  border-bottom: 2px solid rgb(39, 46, 59);
+}
+.section-header .section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+}
+
+.header__logo {
+  margin-right: 140px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  margin-left: auto;
+}
+.header__lang-picker {
+  margin-right: 24px;
+}
+
+.section-main {
+  flex: 1 0 auto;
+  background-color: rgb(32, 34, 42);
+}
+
+.section-hero {
+  height: 100vh;
+  background-color: rgb(32, 34, 42);
+  background-image: url("../../assets/img/hero/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center right;
+}
+
+.hero__title {
+  width: 704px;
+  margin-bottom: 40px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+}
+
+.section-footer {
+  flex: 0 0 auto;
+  background-color: rgb(32, 34, 42);
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,19 @@
+.section-hero {
+  height: 100vh;
+  background-color: $color-shark;
+  background-image: url("../../assets/img/hero/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center right;
+}
+
+.hero {
+  &__title {
+    width: 704px;
+    margin-bottom: 40px;
+    font-size: $fs-5xl;
+    font-weight: 500;
+    line-height: 60px;
+    color: $color-white;
+  }
+}
