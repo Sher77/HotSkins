@@ -10,7 +10,6 @@
   }
 
   &__link {
-    position: relative;
     font-size: $fs-xs;
     font-weight: 500;
     line-height: 16px;
@@ -32,7 +31,28 @@
     &:hover,
     &:focus {
       color: $color-brand;
+    }
+  }
+}
 
+.header__nav {
+  .nav__link {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      top: 49px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-brand;
+      content: "";
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:focus {
       &:before {
         opacity: 1;
       }
