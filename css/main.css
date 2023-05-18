@@ -754,6 +754,7 @@ body {
 .section-footer {
   flex: 0 0 auto;
   background-color: rgb(32, 34, 42);
+  border-top: 2px solid rgb(39, 46, 59);
 }
 .section-footer .section-inner {
   display: flex;

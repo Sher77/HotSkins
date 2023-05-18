@@ -4,6 +4,7 @@
 .section-footer {
   flex: 0 0 auto;
   background-color: $color-shark;
+  border-top: 2px solid $color-ebony-clay;
 
   .section-inner {
     @include flex(center, space-between);
